@@ -5,20 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 
-public class UtilityEventArgs : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
 public class FireEventArgs : EventArgs
 {
     public float FireDamage { get; private set; }

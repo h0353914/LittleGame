@@ -18,8 +18,11 @@ namespace BasicCode
         }
         private void OnTriggerEnter(Collider other)
         {
-            gameManager.AddGems();
-            Destroy(gameObject);
+            if (other.CompareTag("Player"))
+            {
+                gameManager.AddGems();
+                Destroy(gameObject);
+            }
         }
     }
 }
